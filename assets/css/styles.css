@@ -5,11 +5,11 @@
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(220, 68%, 54%);
-  --first-color-lighten: hsl(220, 68%, 97%);
-  --title-color: hsl(220, 48%, 28%);
-  --text-color: hsl(220, 12%, 45%);
-  --body-color: hsl(220, 100%, 99%);
+  --first-color: #D1C4E9;
+  --first-color-lighten: #FFFFFF;
+  --title-color: #FFFFFF;
+  --text-color: #FFFFFF;
+  --body-color: #311B92;
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
@@ -197,7 +197,7 @@ a {
 }
 .dropdown__icon i {
   font-size: 1.25rem;
-  color: var(--first-color);
+  color: var(--body-color);
 }
 .dropdown__title {
   font-size: var(--small-font-size);
