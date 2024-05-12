@@ -438,8 +438,7 @@ a {
   align-items: flex-end;
 }
 .Chat-bot{
-  margin-top: 200px;
-  margin-bottom: 0px;
+
 }
 .t3{
 
@@ -449,5 +448,5 @@ a {
   color: var(--first-color-lighten);
 }
 .Bg{
-  width: 110%;
+  width: 100%;
 }
