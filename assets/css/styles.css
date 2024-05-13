@@ -39,12 +39,19 @@
   padding: 0;
   margin: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   color: var(--text-color);
+  width: 100vw;
+  overflow-x: hidden;
+  /* overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh; */
 }
 
 ul {
@@ -62,13 +69,18 @@ a {
 }
 
 /*=============== HEADER ===============*/
+.nav-section{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
-  background-color: var(--body-color);
+  background-color:var(--body-color);
   z-index: var(--z-fixed);
 }
 
@@ -437,9 +449,6 @@ a {
   justify-content: end;
   align-items: flex-end;
 }
-.Chat-bot{
-
-}
 .t3{
 
   font-size: 4.5rem;
@@ -450,3 +459,67 @@ a {
 .Bg{
   width: 100%;
 }
+
+
+.home-section{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--body-color);
+}
+
+
+/* ==================chat help===================== */
+.chat-section{
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #D1C4E9; */
+  position: relative;
+  z-index: 1;
+}
+.chat-section::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(chatgpt.png) no-repeat center;
+  background-size: cover;
+}
+.chat-text-wrap{
+  width: 40%;
+  height: 100%;
+  /* background-color: #D1C4E9; */
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.chat-title-sections{
+  margin: 20px;
+}
+
+
+/* ==================Next section===================== */
+
+.next-sec{
+  height: 100vh;
+  
+}
+
+.home-section,.chat-section,.next-sec{
+  scroll-snap-align: center;
+}
+.body-container{
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
